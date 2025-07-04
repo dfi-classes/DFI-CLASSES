@@ -5,34 +5,78 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>DFI Classes | Home</title>
   <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #001f3f;
-      color: white;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-      margin: 0;
+    body, html { margin: 0; padding: 0; font-family: Arial, sans-serif; }
+    /* Hero section styles */
+    .hero {
+      background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('hero-bg.jpg') center/cover no-repeat;
+      color: white; height: 90vh;
+      display: flex; flex-direction: column; align-items: center; justify-content: center;
+      text-align: center;
     }
-    h1 {
-      font-size: 2.5rem;
-      margin-bottom: 10px;
+    .hero h1 { font-size: 2.8rem; margin-bottom: 10px; }
+    .hero p { font-size: 1.2rem; margin: 10px 0 20px; }
+    .btn {
+      background-color: #1abc9c; color: white;
+      padding: 12px 30px; margin: 10px;
+      border: none; border-radius: 25px;
+      cursor: pointer; font-size: 1rem;
+      text-decoration: none;
     }
-    p {
-      font-size: 1.2rem;
+    .btn:hover { background-color: #16a085; }
+    /* Features section */
+    .features {
+      padding: 40px 20px; background: #f7f7f7;
+      text-align: center;
     }
-    a {
-      color: #00cfff;
-      text-decoration: underline;
-      margin-top: 20px;
-    }
+    .features h2 { margin-bottom: 20px; color: #2a3f54; }
+    .features .grid { display: grid; grid-template-columns: repeat(auto-fit,minmax(200px,1fr)); gap: 20px; max-width: 1000px; margin: auto; }
+    .feature-item { background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+    /* Footer */
+    footer { text-align: center; padding: 20px; background: #2a3f54; color: white; }
   </style>
 </head>
 <body>
-  <h1>🎓 Welcome to DFI Classes</h1>
-  <p>Official coaching platform by Deba Sir (WBBSE + CBSE, Bengali & English)</p>
-  <a href="login.html">Go to Login</a>
+  <section class="hero">
+    <h1>🎓 Welcome to DFI Classes</h1>
+    <p>Elite commerce coaching by Deba Sir | WBBSE & CBSE in English & Bengali</p>
+    <div>
+      <a class="btn" href="login.html">Get Started</a>
+      <a class="btn" href="contact.html">Contact Us</a>
+    </div>
+  </section>
+
+  <section class="features">
+    <h2>Our Mission & Features</h2>
+    <div class="grid">
+      <div class="feature-item">
+        <h3>🧭 Mission</h3>
+        <p>Empower students with clear understanding in Accountancy & Commerce.</p>
+      </div>
+      <div class="feature-item">
+        <h3>📘 Bilingual Syllabus</h3>
+        <p>Study materials available in English & Bengali for all units.</p>
+      </div>
+      <div class="feature-item">
+        <h3>🧠 AI-Powered Mock Tests</h3>
+        <p>Instant OMR and descriptive test generators with smart feedback.</p>
+      </div>
+      <div class="feature-item">
+        <h3>🎥 Live & Recorded Classes</h3>
+        <p>Real-time learning with option to revisit recorded lessons.</p>
+      </div>
+      <div class="feature-item">
+        <h3>📊 Progress Reports</h3>
+        <p>Get certified progress PDFs, evaluated by Deba Sir.</p>
+      </div>
+      <div class="feature-item">
+        <h3>📞 24/7 Teacher Support</h3>
+        <p>Call or WhatsApp anytime at +91-7003513033 for guidance.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 DFI Classes | Designed by Rajdeep & Deba Sir
+  </footer>
 </body>
-</html><!-- Homepage or redirect to login.html -->
+</html>
